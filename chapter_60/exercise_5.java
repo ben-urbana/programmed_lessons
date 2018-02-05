@@ -8,11 +8,15 @@ class Exercise5
     System.out.println( "Original Array: " 
         + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
  
-    // reverse the order of the numbers in the array
-    for (int i = 0; i < val.length; i++) {
-      temp = val[i];
-      
-    }
+    temp = val[3];
+    val[3] = val[0];
+    val[0] = temp;
+    temp = val[2];
+    val[2] = val[1];
+    val[1] = temp;
+
+    
+
  
     
  
