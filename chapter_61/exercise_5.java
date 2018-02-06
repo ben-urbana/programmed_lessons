@@ -9,12 +9,18 @@ class PanagramDetector
     Scanner scan = new Scanner(System.in);
     String string = scan.nextLine();
     String[] letters = string.split("");
+    boolean pan;
     
 
-    for (int i = 0; i < letters.length; i++) {
-      System.out.println(letters[i]);
+    for (int index = 0; index < letters.length; index++) {
+      char letter = letters.charAt(index);
+      for(char ch = 'a'; ch < 'z'; ch++) {
+        if (letter == ch) {
+          pan = true;
+        }
+      }
     }
-    
+    pan = false;
    
     
 
